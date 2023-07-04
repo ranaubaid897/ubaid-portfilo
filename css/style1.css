@@ -1,0 +1,20 @@
+body {
+    background-color: white;
+    color: black;
+
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+  body .whatsapp-float{
+    background-color: white !important; 
+  }
+
+  .st{
+    
+    transform: trans;
+
+  }
