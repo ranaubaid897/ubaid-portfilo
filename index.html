@@ -10,11 +10,26 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    
+
+  <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+
   <title>ubaid=portfolio</title>
 </head>
 
 <body>
+
+  <!-- img button -->
+
+  <div class="img-but">
+    <span><a href="#upper"><img src="img/pic-2.png" alt=""></a></span>
+  </div>
+
+  <!-- img button -->
 
   <!-- whatsapp button -->
   <div class="whatsapp-float">
@@ -24,7 +39,7 @@
 
   <!-- arrow button -->
   <div class="arrow  p-3 pe-5">
-    <span><a href="#upper"><box-icon name='chevrons-up' style="margin-left: 4px;"></box-icon></a></span>
+    <a href="#upper"><box-icon name='chevrons-up' style="margin-left: 4px;"></box-icon></a><span></span>
   </div>
   <!-- arrow button -->
 
@@ -68,7 +83,7 @@
           </li>
 
           <li class="nav-item mt-1">
-            <button onclick="myFunction()" class="bg-dark text-light"> dark mode</button>
+            <button  onclick="toggleDarkMode()"class="bg-dark text-light " id="cli"> dark mode</button>
           </li>
 
 
@@ -80,15 +95,16 @@
   <!-- navbar -->
 
   <!-- HELLO -->
-  <section id="HELO">
-    <div class="container py-5" style="display: flex; align-items: center">
+  <section id="HELO" class="p-2">
+  <div class="m-5">
+    <div class="container" style="display: flex; align-items: center">
       <div class="row">
         <div class="col-md-6 order-md-1 order-2 mb-5">
           <h1 class="cen">I am ubaid-ul-rehman</h1>
           <p>
-            I am a Web Developer located in Hartford, Connecticut. I currently
-            work as a part time Remote Junior Web Developer for Coolor,
-            located in Las Vegas. I am looking to take on more work and to
+            I am a Web Developer located in Sodiwal, Lahore. I currently
+            work as a part time Remote Junior Web Developer for Almuqeet,
+            located in Lahore. I am looking to take on more work and to
             increase my skills as a Web Developer.
           </p>
           <div class="contact-us">
@@ -112,15 +128,16 @@
             <div style="display: flex; justify-content: start;">
               <div>SOCIAL</div>
               <div>
-                <ul style="display: inline; list-style: none; padding: 3rem;" class="inline">
+                <ul style="display: inline; list-style: none; margin-left: 10px;" class="inline">
                   <li>
-                    <a href=""><box-icon type="logo" name="twitter"></box-icon></a>
+                    <a href="">  <i class="fa fa-facebook-f"></i> </a>
                   </li>
                   <li>
-                    <a href=""><box-icon type="logo" name="facebook"></box-icon></a>
+                    <a href=""><i class="fa fa-twitter"></i>
+                    </a>
                   </li>
                   <li>
-                    <a href=""><box-icon type='logo' name='linkedin'></box-icon></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
                   </li>
                 </ul>
               </div>
@@ -135,11 +152,11 @@
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered  modal-lg	">
-                  <div class="modal-content">
+                  <div class="modal-content  ">
                     <div class="modal-body">
                       <div class="container">
                         <div class="row">
-                          <div class="col-12">
+                          <div class="col-12 ">
                             <h1>Let’s work together </h1>
                             <p>Are you working on something great? I would love to help make it happen! Drop me a letter
                               and start your project right now! Just do it.
@@ -148,16 +165,16 @@
 
                           <div class="col-md-5">
 
-                            <form action="">
+                            <form action="" id="contactForm">
 
 
 
                               <div class="input-group mb-3">
-                                <input type="text" class="form-control py-2" placeholder="Name">
+                                <input type="text" class="form-control py-2" id="name" placeholder="Name">
                               </div>
 
                               <div class="input-group mt-4">
-                                <input type="text" class="form-control py-2" placeholder="E-mail">
+                                <input type="text" class="form-control py-2" id="email" placeholder="E-mail" >
                               </div>
 
                           </div>
@@ -165,7 +182,7 @@
                           <div class="col-md-7">
 
                             <div class="form-floating">
-                              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                              <textarea class="form-control" placeholder="Leave a comment here" id="message" required
                                 style="height: 100px"></textarea>
                               <label for="floatingTextarea2">Meassage</label>
                             </div>
@@ -178,11 +195,11 @@
                     </div>
                     <div class="modal-footer">
 
-                      <button type="submit" class="btn btn-primary px-5 py-3 mt-2 me-3 center">SEND MEASSAGE</button>
+                      <button type="submit" class="btn btn-primary px-5 py-3 mt-2 me-3 center kam">SEND MEASSAGE</button>
 
                       </form>
 
-                      <button type="button" class="btn btn-light px-5 py-3 mt-2 center" data-bs-dismiss="modal">BACK TO
+                      <button type="button" class="btn btn-light px-5 py-3 mt-2 center kam" data-bs-dismiss="modal">BACK TO
                         CV</button>
 
                     </div>
@@ -205,13 +222,15 @@
         </div>
       </div>
     </div>
+  </div>
   </section>
   <!-- HELLO -->
 
   <hr />
   <!-- SKILLS -->
-  <section id="SKILLS">
-    <div class="container p-5" style="display: flex; align-items: center">
+  <section id="SKILLS" class="p-2">
+  <div   class="m-5" data-aos="zoom-in-left" >
+    <div class="container" style="display: flex; align-items: center">
       <div class="row g-5">
         <div class="col-md-4">
           <h2>Skills</h2>
@@ -259,14 +278,17 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <hr />
   <!-- SKILLS -->
 
   <!-- EXPERIENCE -->
-  <section id="EXPERIENCE">
-    <div class="container p-5">
+  <section id="EXPERIENCE" class="p-2">
+
+  <div class="m-5" data-aos="zoom-in-left">
+    <div class="container ">
       <div class="row g-5">
         <div class="col-md-4" style="display: flex; flex-wrap: wrap; align-content: space-between">
           <div class="mix">
@@ -321,13 +343,17 @@
         </div>
       </div>
     </div>
+  </div>
+
   </section>
   <hr />
   <!--  EXPERIENCE -->
 
   <!-- EDUCATION -->
-  <section id="EDUCATION">
-    <div class="container p-5">
+  <section id="EDUCATION" class="p-2">
+
+  <div  class="m-5" data-aos="zoom-out">
+    <div class="container ">
       <div class="row g-5">
         <div class="col-md-4" style="display: flex; flex-wrap: wrap; align-content: space-between">
           <div class="mix">
@@ -369,31 +395,42 @@
         </div>
       </div>
     </div>
+  </div>
   </section>
   <hr />
   <!-- EDUCATION -->
 
   <!-- PORTFOLIO -->
-  <section id="PORTFOLIO">
-    <div class="container">
-      <div class="row mb-3">
-        <div class="col-md-12 drm">
-          <h1>Portfolio.</h1>
-          <ul class="drust">
-            <li><a href="">ALL PROJECTS</a></li>
-            <li><a href="" >WEB SITES</a></li>
-            <li><a href="" >UI\UX DESIGN</a></li>
-            <li><a href="" > FRONTEND</a></li>
-          </ul>
+  <section id="PORTFOLIO" class="p-2">
+
+  <div class="m-5" >
+
+     <div class="container">
+        <div class="row g-3">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title centt">Portfolio.</h1>
         </div>
-      </div>
+
+        <div class="mb-4 sm centt">
+            <a class="  btn-default filter-button" data-filter="all">ALL PROJECTS</a>
+            <a class=" btn-default filter-button" data-filter="hdpe"> WEB SITES</a>
+            <a class=" btn-default filter-button" data-filter="sprinkle"> UI\UX DESIGN</a>
+            <a class=" btn-default filter-button" data-filter="spray">FRONTEND</a>
+            <!-- <a class=" btn-default filter-button" data-filter="irrigation">Irrigation Pipes</a> -->
+        </div>
+        <br/>
 
 
-      <div class="row g-3">
-        <div class="col-md-3 col-6" id="first">
-          <a href="" data-bs-toggle="modal" data-bs-target="#web-app" style="text-decoration: none;">
+
+
+            <div class="gallery_product col-lg-3 col-md-3 col-6 filter sprinkle">
+          <!-- <img src="http://fakeimg.pl/365x365/" class="img-fluid"> -->
+          <a href="" data-bs-toggle="modal" data-bs-target="#web-app2" style="text-decoration: none;">
             <div class="portfolio-box ">
-              <img class="img-fluid" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 300px;">
+              <!-- <img class="img-fluid" src="https://source.unsplash.com/random//?building" 
+                alt="" width="100%" style="max-height: 300px;"> -->
+
+                <img src="https://source.unsplash.com/random//?building" class="img-fluid wid" style="width: 100%;min-height: 300px; max-height: 300px;">
             </div>
 
             <div class="some-text ">
@@ -407,69 +444,9 @@
 
 
           <!-- modal -->
-          <div class="modal fade" id="web-app" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
+          <div class="modal fade" id="web-app2" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered  modal-lg	">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <h1>Startup website for Patty.</h1>
-                  <p>Patty Startup is the perfect shop. I did my best and prepared 12 highly customizable pages to
-                    present all startup's products. Upon opening this product you will see stylish and unique layouts
-                    thoroughly organized into their appropriate groups.</p>
-                  <div>
-                    <span style="font-weight: bold;"> STACK</span>
-                    <span class="ps-4">HTML, CSS, Bootstrap, Javascript, SVG</span>
-                  </div>
-
-                  <div>
-                  <span style="font-weight: bold; "> DATE</span>
-                  <span style="margin-left: 32px;">April, 2017</span>
-                </div>
-
-
-                <img class="img-fluid my-3" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 500px;">
-
-                <img class="img-fluid my-3" src="https://source.unsplash.com/random//?space" alt="" width="100%" style="max-height: 500px;">
-
-                </div>
-                <div class="modal-footer">
-
-                  <a class="btn btn-primary px-5 py-3 mt-2 me-3 center" href="#">VISIT WEBSITE</a>
-
-                  </form>
-
-                  <button type="button" class="btn btn-light px-5 py-3 mt-2 center" data-bs-dismiss="modal">BACK TO
-                    CV</button>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-        </div>
-
-
-        <div class="col-md-3 col-6" id="second">
-          <a href="" data-bs-toggle="modal" data-bs-target="#web-app" style="text-decoration: none;">
-            <div class="portfolio-box ">
-              <img class="img-fluid" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 300px;">
-            </div>
-
-            <div class="some-text ">
-              <span style="display: block; ">Shop web app “Patty”</span>
-              <span style="color: gray;"> April, 2017</span>
-            </div>
-
-
-
-          </a>
-
-
-          <!-- modal -->
-          <div class="modal fade" id="web-app" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered  modal-lg	">
-              <div class="modal-content">
+              <div class="modal-content dark-mode">
                 <div class="modal-body">
                   <h1>Startup website for Patty.</h1>
                   <p>Patty Startup is the perfect shop. I did my best and prepared 12 highly customizable pages to
@@ -504,416 +481,453 @@
               </div>
             </div>
           </div>
-
-
-
-        </div>
-
-
-
-
-
-
-        <div class="col-md-3 col-6" id="third">
-          <a href="" data-bs-toggle="modal" data-bs-target="#web-app" style="text-decoration: none;">
-            <div class="portfolio-box">
-              <img class="img-fluid" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 300px;">
             </div>
 
-            <div class="some-text ">
-              <span style="display: block; ">Shop web app “Patty”</span>
-              <span style="color: gray;"> April, 2017</span>
-            </div>
+            <div class="gallery_product col-lg-3 col-md-3 col-6 filter sprinkle">
+                <!-- <img src="http://fakeimg.pl/365x365/" class="img-fluid"> -->
+                <a href="" data-bs-toggle="modal" data-bs-target="#web-app2" style="text-decoration: none;">
+                  <div class="portfolio-box ">
+                    <!-- <img class="img-fluid" src="https://source.unsplash.com/random//?building" 
+                      alt="" width="100%" style="max-height: 300px;"> -->
 
-
-
-          </a>
-
-
-          <!-- modal -->
-          <div class="modal fade" id="web-app" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered  modal-lg	">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <h1>Startup website for Patty.</h1>
-                  <p>Patty Startup is the perfect shop. I did my best and prepared 12 highly customizable pages to
-                    present all startup's products. Upon opening this product you will see stylish and unique layouts
-                    thoroughly organized into their appropriate groups.</p>
-                  <div>
-                    <span style="font-weight: bold;"> STACK</span>
-                    <span class="ps-4">HTML, CSS, Bootstrap, Javascript, SVG</span>
+                      <img src="https://source.unsplash.com/random//?building" class="img-fluid wid" style="width: 100%;min-height: 300px; max-height: 300px;">
                   </div>
-
-                  <div>
-                  <span style="font-weight: bold; "> DATE</span>
-                  <span style="margin-left: 32px;">April, 2017</span>
-                </div>
-
-
-                <img class="img-fluid my-3" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 500px;">
-
-                <img class="img-fluid my-3" src="https://source.unsplash.com/random//?space" alt="" width="100%" style="max-height: 500px;">
-
-                </div>
-                <div class="modal-footer">
-
-                  <a class="btn btn-primary px-5 py-3 mt-2 me-3 center">VISIT WEBSITE</a>
-
-                  </form>
-
-                  <button type="button" class="btn btn-light px-5 py-3 mt-2 center" data-bs-dismiss="modal">BACK TO
-                    CV</button>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-        </div>
-
-
-
-
-
-
-
-        <div class="col-md-3 col-6" id="four">
-          <a href="" data-bs-toggle="modal" data-bs-target="#web-app" style="text-decoration: none;">
-            <div class="portfolio-box ">
-              <img class="img-fluid" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 300px;">
-            </div>
-
-            <div class="some-text ">
-              <span style="display: block; ">Shop web app “Patty”</span>
-              <span style="color: gray;"> April, 2017</span>
-            </div>
-
-
-
-          </a>
-
-
-          <!-- modal -->
-          <div class="modal fade" id="web-app" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered  modal-lg	">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <h1>Startup website for Patty.</h1>
-                  <p>Patty Startup is the perfect shop. I did my best and prepared 12 highly customizable pages to
-                    present all startup's products. Upon opening this product you will see stylish and unique layouts
-                    thoroughly organized into their appropriate groups.</p>
-                  <div>
-                    <span style="font-weight: bold;"> STACK</span>
-                    <span class="ps-4">HTML, CSS, Bootstrap, Javascript, SVG</span>
+      
+                  <div class="some-text ">
+                    <span style="display: block; ">Shop web app “Patty”</span>
+                    <span style="color: gray;"> April, 2017</span>
                   </div>
-
-                  <div>
-                  <span style="font-weight: bold; "> DATE</span>
-                  <span style="margin-left: 32px;">April, 2017</span>
-                </div>
-
-
-                <img class="img-fluid my-3" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 500px;">
-
-                <img class="img-fluid my-3" src="https://source.unsplash.com/random//?space" alt="" width="100%" style="max-height: 500px;">
-
-                </div>
-                <div class="modal-footer">
-
-                  <a class="btn btn-primary px-5 py-3 mt-2 me-3 center">VISIT WEBSITE</a>
-
-                  </form>
-
-                  <button type="button" class="btn btn-light px-5 py-3 mt-2 center" data-bs-dismiss="modal">BACK TO
-                    CV</button>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-        <div class="col-md-3 col-6" id="five">
-          <a href="" data-bs-toggle="modal" data-bs-target="#web-app" style="text-decoration: none;">
-            <div class="portfolio-box ">
-              <img class="img-fluid" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 300px;">
-            </div>
-
-            <div class="some-text ">
-              <span style="display: block; ">Shop web app “Patty”</span>
-              <span style="color: gray;"> April, 2017</span>
-            </div>
-
-
-
-          </a>
-
-
-          <!-- modal -->
-          <div class="modal fade" id="web-app" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered  modal-lg	">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <h1>Startup website for Patty.</h1>
-                  <p>Patty Startup is the perfect shop. I did my best and prepared 12 highly customizable pages to
-                    present all startup's products. Upon opening this product you will see stylish and unique layouts
-                    thoroughly organized into their appropriate groups.</p>
-                  <div>
-                    <span style="font-weight: bold;"> STACK</span>
-                    <span class="ps-4">HTML, CSS, Bootstrap, Javascript, SVG</span>
+      
+      
+      
+                </a>
+      
+      
+                <!-- modal -->
+                <div class="modal fade" id="web-app2" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered  modal-lg	">
+                    <div class="modal-content dark-mode">
+                      <div class="modal-body">
+                        <h1>Startup website for Patty.</h1>
+                        <p>Patty Startup is the perfect shop. I did my best and prepared 12 highly customizable pages to
+                          present all startup's products. Upon opening this product you will see stylish and unique layouts
+                          thoroughly organized into their appropriate groups.</p>
+                        <div>
+                          <span style="font-weight: bold;"> STACK</span>
+                          <span class="ps-4">HTML, CSS, Bootstrap, Javascript, SVG</span>
+                        </div>
+      
+                        <div>
+                        <span style="font-weight: bold; "> DATE</span>
+                        <span style="margin-left: 32px;">April, 2017</span>
+                      </div>
+      
+      
+                      <img class="img-fluid my-3" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 500px;">
+      
+                      <img class="img-fluid my-3" src="https://source.unsplash.com/random//?space" alt="" width="100%" style="max-height: 500px;">
+      
+                      </div>
+                      <div class="modal-footer">
+      
+                        <a class="btn btn-primary px-5 py-3 mt-2 me-3 center">VISIT WEBSITE</a>
+      
+                        </form>
+      
+                        <button type="button" class="btn btn-light px-5 py-3 mt-2 center" data-bs-dismiss="modal">BACK TO
+                          CV</button>
+      
+                      </div>
+                    </div>
                   </div>
-
-                  <div>
-                  <span style="font-weight: bold; "> DATE</span>
-                  <span style="margin-left: 32px;">April, 2017</span>
                 </div>
-
-
-                <img class="img-fluid my-3" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 500px;">
-
-                <img class="img-fluid my-3" src="https://source.unsplash.com/random//?space" alt="" width="100%" style="max-height: 500px;">
-
-                </div>
-                <div class="modal-footer">
-
-                  <a class="btn btn-primary px-5 py-3 mt-2 me-3 center">VISIT WEBSITE</a>
-
-                  </form>
-
-                  <button type="button" class="btn btn-light px-5 py-3 mt-2 center" data-bs-dismiss="modal">BACK TO
-                    CV</button>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-        </div>
-
-
-
-
-
-
-
-        <div class="col-md-3 col-6" id="six">
-          <a href="" data-bs-toggle="modal" data-bs-target="#web-app" style="text-decoration: none;">
-            <div class="portfolio-box ">
-              <img class="img-fluid" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 300px;">
             </div>
 
-            <div class="some-text ">
-              <span style="display: block; ">Shop web app “Patty”</span>
-              <span style="color: gray;"> April, 2017</span>
-            </div>
+            <div class="gallery_product col-lg-3 col-md-3 col-6  filter hdpe">
+                <!-- <img src="http://fakeimg.pl/365x365/" class="img-fluid"> -->
+                <a href="" data-bs-toggle="modal" data-bs-target="#web-app3" style="text-decoration: none;">
+                  <div class="portfolio-box ">
+                    <!-- <img class="img-fluid" src="https://source.unsplash.com/random//?building" 
+                      alt="" width="100%" style="max-height: 300px;"> -->
 
-
-
-          </a>
-
-
-          <!-- modal -->
-          <div class="modal fade" id="web-app" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered  modal-lg	">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <h1>Startup website for Patty.</h1>
-                  <p>Patty Startup is the perfect shop. I did my best and prepared 12 highly customizable pages to
-                    present all startup's products. Upon opening this product you will see stylish and unique layouts
-                    thoroughly organized into their appropriate groups.</p>
-                  <div>
-                    <span style="font-weight: bold;"> STACK</span>
-                    <span class="ps-4">HTML, CSS, Bootstrap, Javascript, SVG</span>
+                      <img src="https://source.unsplash.com/random//?building" class="img-fluid wid" style="width: 100%;min-height: 300px; max-height: 300px;">
                   </div>
-
-                  <div>
-                  <span style="font-weight: bold; "> DATE</span>
-                  <span style="margin-left: 32px;">April, 2017</span>
-                </div>
-
-
-                <img class="img-fluid my-3" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 500px;">
-
-                <img class="img-fluid my-3" src="https://source.unsplash.com/random//?space" alt="" width="100%" style="max-height: 500px;">
-
-                </div>
-                <div class="modal-footer">
-
-                  <a class="btn btn-primary px-5 py-3 mt-2 me-3 center">VISIT WEBSITE</a>
-
-                  </form>
-
-                  <button type="button" class="btn btn-light px-5 py-3 mt-2 center" data-bs-dismiss="modal">BACK TO
-                    CV</button>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-        </div>
-
-
-
-
-
-        <div class="col-md-3 col-6" id="seven">
-          <a href="" data-bs-toggle="modal" data-bs-target="#web-app" style="text-decoration: none;">
-            <div class="portfolio-box ">
-              <img class="img-fluid" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 300px;">
-            </div>
-
-            <div class="some-text ">
-              <span style="display: block; ">Shop web app “Patty”</span>
-              <span style="color: gray;"> April, 2017</span>
-            </div>
-
-
-
-          </a>
-
-
-          <!-- modal -->
-          <div class="modal fade" id="web-app" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered  modal-lg	">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <h1>Startup website for Patty.</h1>
-                  <p>Patty Startup is the perfect shop. I did my best and prepared 12 highly customizable pages to
-                    present all startup's products. Upon opening this product you will see stylish and unique layouts
-                    thoroughly organized into their appropriate groups.</p>
-                  <div>
-                    <span style="font-weight: bold;"> STACK</span>
-                    <span class="ps-4">HTML, CSS, Bootstrap, Javascript, SVG</span>
+      
+                  <div class="some-text ">
+                    <span style="display: block; ">Shop web app “Patty”</span>
+                    <span style="color: gray;"> April, 2017</span>
                   </div>
-
-                  <div>
-                  <span style="font-weight: bold; "> DATE</span>
-                  <span style="margin-left: 32px;">April, 2017</span>
-                </div>
-
-
-                <img class="img-fluid my-3" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 500px;">
-
-                <img class="img-fluid my-3" src="https://source.unsplash.com/random//?space" alt="" width="100%" style="max-height: 500px;">
-
-                </div>
-                <div class="modal-footer">
-
-                  <a class="btn btn-primary px-5 py-3 mt-2 me-3 center">VISIT WEBSITE</a>
-
-                  </form>
-
-                  <button type="button" class="btn btn-light px-5 py-3 mt-2 center" data-bs-dismiss="modal">BACK TO
-                    CV</button>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-        </div>
-
-
-
-
-
-        <div class="col-md-3 col-6" id="eight">
-          <a href="" data-bs-toggle="modal" data-bs-target="#web-app" style="text-decoration: none;">
-            <div class="portfolio-box">
-              <img class="img-fluid" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 300px;">
-            </div>
-
-            <div class="some-text ">
-              <span style="display: block; ">Shop web app “Patty”</span>
-              <span style="color: gray;"> April, 2017</span>
-            </div>
-
-
-
-          </a>
-
-
-          <!-- modal -->
-          <div class="modal fade" id="web-app" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered  modal-lg	">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <h1>Startup website for Patty.</h1>
-                  <p>Patty Startup is the perfect shop. I did my best and prepared 12 highly customizable pages to
-                    present all startup's products. Upon opening this product you will see stylish and unique layouts
-                    thoroughly organized into their appropriate groups.</p>
-                  <div>
-                    <span style="font-weight: bold;"> STACK</span>
-                    <span class="ps-4">HTML, CSS, Bootstrap, Javascript, SVG</span>
+      
+      
+      
+                </a>
+      
+      
+                <!-- modal -->
+                <div class="modal fade" id="web-app3" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered  modal-lg	">
+                    <div class="modal-content dark-mode">
+                      <div class="modal-body">
+                        <h1>Startup website for Patty.</h1>
+                        <p>Patty Startup is the perfect shop. I did my best and prepared 12 highly customizable pages to
+                          present all startup's products. Upon opening this product you will see stylish and unique layouts
+                          thoroughly organized into their appropriate groups.</p>
+                        <div>
+                          <span style="font-weight: bold;"> STACK</span>
+                          <span class="ps-4">HTML, CSS, Bootstrap, Javascript, SVG</span>
+                        </div>
+      
+                        <div>
+                        <span style="font-weight: bold; "> DATE</span>
+                        <span style="margin-left: 32px;">April, 2017</span>
+                      </div>
+      
+      
+                      <img class="img-fluid my-3" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 500px;">
+      
+                      <img class="img-fluid my-3" src="https://source.unsplash.com/random//?space" alt="" width="100%" style="max-height: 500px;">
+      
+                      </div>
+                      <div class="modal-footer">
+      
+                        <a class="btn btn-primary px-5 py-3 mt-2 me-3 center">VISIT WEBSITE</a>
+      
+                        </form>
+      
+                        <button type="button" class="btn btn-light px-5 py-3 mt-2 center" data-bs-dismiss="modal">BACK TO
+                          CV</button>
+      
+                      </div>
+                    </div>
                   </div>
-
-                  <div>
-                  <span style="font-weight: bold; "> DATE</span>
-                  <span style="margin-left: 32px;">April, 2017</span>
                 </div>
-
-
-                <img class="img-fluid my-3" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 500px;">
-
-                <img class="img-fluid my-3" src="https://source.unsplash.com/random//?space" alt="" width="100%" style="max-height: 500px;">
-
-                </div>
-                <div class="modal-footer">
-
-                  <a class="btn btn-primary px-5 py-3 mt-2 me-3 center">VISIT WEBSITE</a>
-
-                  </form>
-
-                  <button type="button" class="btn btn-light px-5 py-3 mt-2 center" data-bs-dismiss="modal">BACK TO
-                    CV</button>
-
-                </div>
-              </div>
             </div>
-          </div>
 
+            <div class="gallery_product col-lg-3 col-md-3 col-6  filter sprinkle">
+                <!-- <img src="http://fakeimg.pl/365x365/" class="img-fluid"> -->
+                <a href="" data-bs-toggle="modal" data-bs-target="#web-app4" style="text-decoration: none;">
+                  <div class="portfolio-box ">
+                    <!-- <img class="img-fluid" src="https://source.unsplash.com/random//?building" 
+                      alt="" width="100%" style="max-height: 300px;"> -->
 
+                      <img src="https://source.unsplash.com/random//?building" class="img-fluid wid" style="width: 100%;min-height: 300px; max-height: 300px;">
+                  </div>
+      
+                  <div class="some-text ">
+                    <span style="display: block; ">Shop web app “Patty”</span>
+                    <span style="color: gray;"> April, 2017</span>
+                  </div>
+      
+      
+      
+                </a>
+      
+      
+                <!-- modal -->
+                <div class="modal fade" id="web-app4" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered  modal-lg	">
+                    <div class="modal-content dark-mode">
+                      <div class="modal-body">
+                        <h1>Startup website for Patty.</h1>
+                        <p>Patty Startup is the perfect shop. I did my best and prepared 12 highly customizable pages to
+                          present all startup's products. Upon opening this product you will see stylish and unique layouts
+                          thoroughly organized into their appropriate groups.</p>
+                        <div>
+                          <span style="font-weight: bold;"> STACK</span>
+                          <span class="ps-4">HTML, CSS, Bootstrap, Javascript, SVG</span>
+                        </div>
+      
+                        <div>
+                        <span style="font-weight: bold; "> DATE</span>
+                        <span style="margin-left: 32px;">April, 2017</span>
+                      </div>
+      
+      
+                      <img class="img-fluid my-3" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 500px;">
+      
+                      <img class="img-fluid my-3" src="https://source.unsplash.com/random//?space" alt="" width="100%" style="max-height: 500px;">
+      
+                      </div>
+                      <div class="modal-footer">
+      
+                        <a class="btn btn-primary px-5 py-3 mt-2 me-3 center">VISIT WEBSITE</a>
+      
+                        </form>
+      
+                        <button type="button" class="btn btn-light px-5 py-3 mt-2 center" data-bs-dismiss="modal">BACK TO
+                          CV</button>
+      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
 
+            <div class="gallery_product col-lg-3 col-md-3 col-6  filter hdpe">
+                <!-- <img src="http://fakeimg.pl/365x365/" class="img-fluid"> -->
+                <a href="" data-bs-toggle="modal" data-bs-target="#web-app5" style="text-decoration: none;">
+                  <div class="portfolio-box ">
+                    <!-- <img class="img-fluid" src="https://source.unsplash.com/random//?building" 
+                      alt="" width="100%" style="max-height: 300px;"> -->
+
+                      <img src="https://source.unsplash.com/random//?building" class="img-fluid wid" style="width: 100%;min-height: 300px; max-height: 300px;">
+                  </div>
+      
+                  <div class="some-text ">
+                    <span style="display: block; ">Shop web app “Patty”</span>
+                    <span style="color: gray;"> April, 2017</span>
+                  </div>
+      
+      
+      
+                </a>
+      
+      
+                <!-- modal -->
+                <div class="modal fade" id="web-app5" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered  modal-lg	">
+                    <div class="modal-content dark-mode">
+                      <div class="modal-body">
+                        <h1>Startup website for Patty.</h1>
+                        <p>Patty Startup is the perfect shop. I did my best and prepared 12 highly customizable pages to
+                          present all startup's products. Upon opening this product you will see stylish and unique layouts
+                          thoroughly organized into their appropriate groups.</p>
+                        <div>
+                          <span style="font-weight: bold;"> STACK</span>
+                          <span class="ps-4">HTML, CSS, Bootstrap, Javascript, SVG</span>
+                        </div>
+      
+                        <div>
+                        <span style="font-weight: bold; "> DATE</span>
+                        <span style="margin-left: 32px;">April, 2017</span>
+                      </div>
+      
+      
+                      <img class="img-fluid my-3" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 500px;">
+      
+                      <img class="img-fluid my-3" src="https://source.unsplash.com/random//?space" alt="" width="100%" style="max-height: 500px;">
+      
+                      </div>
+                      <div class="modal-footer">
+      
+                        <a class="btn btn-primary px-5 py-3 mt-2 me-3 center">VISIT WEBSITE</a>
+      
+                        </form>
+      
+                        <button type="button" class="btn btn-light px-5 py-3 mt-2 center" data-bs-dismiss="modal">BACK TO
+                          CV</button>
+      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-6 filter sprinkle">
+                <!-- <img src="http://fakeimg.pl/365x365/" class="img-fluid"> -->
+                <a href="" data-bs-toggle="modal" data-bs-target="#web-app6" style="text-decoration: none;">
+                  <div class="portfolio-box ">
+                    <!-- <img class="img-fluid" src="https://source.unsplash.com/random//?building" 
+                      alt="" width="100%" style="max-height: 300px;"> -->
+
+                      <img src="https://source.unsplash.com/random//?building" class="img-fluid wid" style="width: 100%;min-height: 300px;max-height: 300px;">
+                  </div>
+      
+                  <div class="some-text ">
+                    <span style="display: block; ">Shop web app “Patty”</span>
+                    <span style="color: gray;"> April, 2017</span>
+                  </div>
+      
+      
+      
+                </a>
+      
+      
+                <!-- modal -->
+                <div class="modal fade" id="web-app6" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered  modal-lg	">
+                    <div class="modal-content dark-mode">
+                      <div class="modal-body">
+                        <h1>Startup website for Patty.</h1>
+                        <p>Patty Startup is the perfect shop. I did my best and prepared 12 highly customizable pages to
+                          present all startup's products. Upon opening this product you will see stylish and unique layouts
+                          thoroughly organized into their appropriate groups.</p>
+                        <div>
+                          <span style="font-weight: bold;"> STACK</span>
+                          <span class="ps-4">HTML, CSS, Bootstrap, Javascript, SVG</span>
+                        </div>
+      
+                        <div>
+                        <span style="font-weight: bold; "> DATE</span>
+                        <span style="margin-left: 32px;">April, 2017</span>
+                      </div>
+      
+      
+                      <img class="img-fluid my-3" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 500px;">
+      
+                      <img class="img-fluid my-3" src="https://source.unsplash.com/random//?space" alt="" width="100%" style="max-height: 500px;">
+      
+                      </div>
+                      <div class="modal-footer">
+      
+                        <a class="btn btn-primary px-5 py-3 mt-2 me-3 center">VISIT WEBSITE</a>
+      
+                        </form>
+      
+                        <button type="button" class="btn btn-light px-5 py-3 mt-2 center" data-bs-dismiss="modal">BACK TO
+                          CV</button>
+      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-6  filter spray">
+                <!-- <img src="http://fakeimg.pl/365x365/" class="img-fluid"> -->
+                <a href="" data-bs-toggle="modal" data-bs-target="#web-app7" style="text-decoration: none;">
+                  <div class="portfolio-box ">
+                    <!-- <img class="img-fluid" src="https://source.unsplash.com/random//?building" 
+                      alt="" width="100%" style="max-height: 300px;"> -->
+
+                      <img src="https://source.unsplash.com/random//?building" class="img-fluid wid"  style="width: 100%;min-height: 300px;max-height: 300px;">
+                  </div>
+      
+                  <div class="some-text ">
+                    <span style="display: block; ">Shop web app “Patty”</span>
+                    <span style="color: gray;"> April, 2017</span>
+                  </div>
+      
+      
+      
+                </a>
+      
+      
+                <!-- modal -->
+                <div class="modal fade" id="web-app7" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered  modal-lg	">
+                    <div class="modal-content dark-mode">
+                      <div class="modal-body">
+                        <h1>Startup website for Patty.</h1>
+                        <p>Patty Startup is the perfect shop. I did my best and prepared 12 highly customizable pages to
+                          present all startup's products. Upon opening this product you will see stylish and unique layouts
+                          thoroughly organized into their appropriate groups.</p>
+                        <div>
+                          <span style="font-weight: bold;"> STACK</span>
+                          <span class="ps-4">HTML, CSS, Bootstrap, Javascript, SVG</span>
+                        </div>
+      
+                        <div>
+                        <span style="font-weight: bold; "> DATE</span>
+                        <span style="margin-left: 32px;">April, 2017</span>
+                      </div>
+      
+      
+                      <img class="img-fluid my-3" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 500px;">
+      
+                      <img class="img-fluid my-3" src="https://source.unsplash.com/random//?space" alt="" width="100%" style="max-height: 500px;">
+      
+                      </div>
+                      <div class="modal-footer">
+      
+                        <a class="btn btn-primary px-5 py-3 mt-2 me-3 center">VISIT WEBSITE</a>
+      
+                        </form>
+      
+                        <button type="button" class="btn btn-light px-5 py-3 mt-2 center" data-bs-dismiss="modal">BACK TO
+                          CV</button>
+      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-6 filter hdpe">
+                <!-- <img src="http://fakeimg.pl/365x365/" class="img-fluid"> -->
+                <a href="" data-bs-toggle="modal" data-bs-target="#web-app8" style="text-decoration: none;">
+                  <div class="portfolio-box ">
+                    <!-- <img class="img-fluid" src="https://source.unsplash.com/random//?building" 
+                      alt="" width="100%" style="max-height: 300px;"> -->
+
+                      <img src="https://source.unsplash.com/random//?building" class="img-fluid wid" style="width: 100%;min-height: 300px;max-height: 300px;">
+                  </div>
+      
+                  <div class="some-text ">
+                    <span style="display: block; ">Shop web app “Patty”</span>
+                    <span style="color: gray;"> April, 2017</span>
+                  </div>
+      
+      
+      
+                </a>
+      
+      
+                <!-- modal -->
+                <div class="modal fade" id="web-app8" tabindex="-1" aria-labelledby="web-applabbel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered  modal-lg	">
+                    <div class="modal-content dark-mode">
+                      <div class="modal-body">
+                        <h1>Startup website for Patty.</h1>
+                        <p>Patty Startup is the perfect shop. I did my best and prepared 12 highly customizable pages to
+                          present all startup's products. Upon opening this product you will see stylish and unique layouts
+                          thoroughly organized into their appropriate groups.</p>
+                        <div>
+                          <span style="font-weight: bold;"> STACK</span>
+                          <span class="ps-4">HTML, CSS, Bootstrap, Javascript, SVG</span>
+                        </div>
+      
+                        <div>
+                        <span style="font-weight: bold; "> DATE</span>
+                        <span style="margin-left: 32px;">April, 2017</span>
+                      </div>
+      
+      
+                      <img class="img-fluid my-3" src="https://source.unsplash.com/random//?building" alt="" width="100%" style="max-height: 500px;">
+      
+                      <img class="img-fluid my-3" src="https://source.unsplash.com/random//?space" alt="" width="100%" style="max-height: 500px;">
+      
+                      </div>
+                      <div class="modal-footer">
+      
+                        <a class="btn btn-primary px-5 py-3 mt-2 me-3 center">VISIT WEBSITE</a>
+      
+                        </form>
+      
+                        <button type="button" class="btn btn-light px-5 py-3 mt-2 center" data-bs-dismiss="modal">BACK TO
+                          CV</button>
+      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+         
+        
+
+        
         </div>
+    </div>
 
-
-
-      </div>
-
-
-
+  </div>
 
   </section>
   <!-- PORTFOLIO -->
 
 
   <!-- FEEDBACK  -->
-  <section id="FEEDBACK">
-    <div class="container p-5 my-5">
+  <section id="FEEDBACK" class="p-2">
+
+  <div  class="m-5" data-aos="flip-left"
+  data-aos-easing="ease-out-cubic"
+  data-aos-duration="2000">
+    <div class="container ">
       <div class="row g-5">
         <div class="col-md-4" style="display: flex; flex-wrap: wrap; align-content: space-between">
           <div class="mix">
             <h1>FEEDBACK.</h1>
-            <p>
+            <p style="color: grey;">
               Take a look at the reviews of my customers and ensure the quality of my services.
             </p>
           </div>
@@ -924,17 +938,16 @@
         <div class="col-md-8">
           <div class="experience box" style="display: flex;">
             <div>
-              <span><img src="/img/photo.jpg" alt=""
-                  style="max-width: 50px;height: 50px;border-radius: 5px;margin-right: 15px;"></span>
+              <span><img src="https://source.unsplash.com/random//?gentlemen" alt=""
+                  style="max-width: 70px;min-width: 70px;height: 70px;border-radius: 10px;margin-right: 15px;"></span>
             </div>
             <div>
-              <span style="font-size: 20px; font-weight: bold">Google Developer training</span>
-              <span class="ps-3">Google</span>
-              <span class="mt-1" style="display: block">May, 2014 — Present</span>
-              <p class="mt-3">
-                Designed and developed user-friendly website, including
-                optimized check-out page that increased user clicks, and
-                subsequently customer purchases by 20%.
+              <span style="font-size: 20px; font-weight: bold">DENNY</span>
+              <span class="ps-3 some" style="color: grey;">President @ Coolor Studio</span>
+              
+              <p class="mt-3" style="color: grey;">
+                Designed and developed user-friendly website, including optimized check-out page that increased user clicks, and subsequently customer purchases by 20%.
+
               </p>
             </div>
 
@@ -944,17 +957,20 @@
 
           <div class="experience box" style="display: flex;">
             <div>
-              <span><img src="/img/photo.jpg" alt=""
-                  style="max-width: 50px;height: 50px;border-radius: 5px;margin-right: 15px;"></span>
+              <span><img src="https://source.unsplash.com/random//?hero" alt=""
+                  style="max-width: 70px;min-width: 70px; height: 70px;border-radius: 10px;margin-right: 15px;"></span>
             </div>
             <div>
-              <span style="font-size: 20px; font-weight: bold">Google Developer training</span>
-              <span class="ps-3">Google</span>
-              <span class="mt-1" style="display: block">May, 2014 — Present</span>
-              <p class="mt-3">
-                Designed and developed user-friendly website, including
-                optimized check-out page that increased user clicks, and
-                subsequently customer purchases by 20%.
+              <span style="font-size: 20px; font-weight: bold">KHAN</span>
+              <span class="ps-3 some" style="color: grey;">Developer @ Illskill Agency</span>
+              
+              <p class="mt-3" style="color: grey;">
+                Designed and developed user-friendly website, including optimized check-out page that increased user clicks, and subsequently customer purchases by 20%.
+
+
+
+
+
               </p>
             </div>
 
@@ -965,17 +981,18 @@
 
           <div class="experience box" style="display: flex;">
             <div>
-              <span><img src="/img/photo.jpg" alt=""
-                  style="max-width: 50px;height: 50px;border-radius: 5px;margin-right: 15px;"></span>
+              <span><img src="https://source.unsplash.com/random//?menface" alt="" "
+                  style="max-width: 70px;min-width: 70px;height: 70px;border-radius: 10px;margin-right: 15px;"></span>
             </div>
             <div>
-              <span style="font-size: 20px; font-weight: bold">Google Developer training</span>
-              <span class="ps-3">Google</span>
-              <span class="mt-1" style="display: block">May, 2014 — Present</span>
-              <p class="mt-3">
-                Designed and developed user-friendly website, including
-                optimized check-out page that increased user clicks, and
-                subsequently customer purchases by 20%.
+              <span style="font-size: 20px; font-weight: bold">Gaylord Jefferson</span>
+              <span class="ps-3 some" style="color: grey;">Project Manager @ Motion Studio </span>
+              
+              <p class="mt-3" style="color: grey;">
+                Designed and developed user-friendly website, including optimized check-out page that increased user clicks, and subsequently customer purchases by 20%.
+
+
+
               </p>
             </div>
 
@@ -987,14 +1004,18 @@
         </div>
       </div>
     </div>
+  </div>
+
   </section>
   <hr />
   <!-- FEEDBACK  -->
 
 
   <!-- CONTACT ME -->
-  <section id="CONTACT ME">
-    <div class="container p-5">
+  <section id="CONTACT ME" class="p-2">
+
+  <div   class="m-5">
+    <div class="container">
       <div class="row g-4">
         <div class="col-lg-4" style="display: flex; flex-wrap: wrap; align-content: space-between">
           <div class="mix ">
@@ -1011,13 +1032,13 @@
         <div class="col-lg-3">
 
 
-          <form>
+          <form id="contactForm" action="">
             <div class="input-group mb-3">
-              <input type="text" class="form-control py-2" placeholder="Name" name="name">
+              <input type="text" class="form-control py-2" placeholder="Name" name="name" id="name">
             </div>
 
             <div class="input-group mt-4">
-              <input type="text" class="form-control py-2" placeholder="E-mail" name="password">
+              <input type="text" class="form-control py-2" placeholder="E-mail" name="password" id="email">
             </div>
 
 
@@ -1026,9 +1047,9 @@
         <div class="col-lg-5">
 
           <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+            <textarea class="form-control" placeholder="Leave a comment here" id="message"
               style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Meassage</label>
+            <label for="floatingTextarea2" style="color: grey;">Meassage</label>
           </div>
 
           <div class="mt-4 cant">
@@ -1043,6 +1064,7 @@
         </div>
       </div>
     </div>
+  </div>
   </section>
   <hr />
   <!-- CONTACT ME -->
@@ -1063,20 +1085,20 @@
 
 
 
-
-
-
-
-
-
 <!-- Option 1: Bootstrap Bundle with Popper -->
+<!--  jquiry cdn -->
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="/javascript/js.js"></script>
 
-<!--  jquiry cdn -->
-<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 
