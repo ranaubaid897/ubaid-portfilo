@@ -181,7 +181,7 @@
 
 
  .sm a{
-  text-decoration: none;
+  /* text-decoration: solid; */
   padding: 10px;
 
  }
@@ -288,6 +288,10 @@
 .dark-mode .modal {
   color: #fff;
 } */
+
+.sty{
+  text-decoration: solid;
+}
 
 
 
@@ -435,6 +439,16 @@
       display: none;
     }
 
+
+  }
+
+  @media only screen and (max-width: 320px) {
+
+    .widths{
+      max-width: 40px !important;
+    min-width: 40px !important;
+    height: 40px !important;
+    }
 
   }
  
